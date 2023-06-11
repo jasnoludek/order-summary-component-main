@@ -1,49 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-
-  <title>Frontend Mentor | Order summary card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Order summary card</title> 
 </head>
 
 <body>
-
-  <picture class="background__ptrn">
-      <source srcset="images/pattern-background-desktop.svg" alt=" " media="(min-width: 43.75rem)">
-      <img src="images/pattern-background-mobile.svg" alt=" " />
-  </picture>
-
   <main>
+  <article class="card__container">
 
     <img class="card__img" src="images/illustration-hero.svg" alt="An illustration of a woman dancing and listening to headphones in front of a city skyline at night"/>
 
-    <h1>Order Summary</h1>
-
-    <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-       device anywhere you like!</p>
-
-    <div class="card__plan-container">
-      <img class="card__icon-music" src="images/icon-music.svg" />
-      <div>
-        <span class="card__lan-type">Annual Plan</span>
-        <span class="card__price">$59.99/year</span>
+    <div class="card__content">
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+      device anywhere you like!</p>
+      <div class="card__plan-container">
+        <img class="card__icon-music" src="images/icon-music.svg" />
+        <div class="card__plan-selection">
+          <h2 class="plan__type">Annual Plan</h2>
+          <span class="plan__price">$59.99/year</span>
+        </div>
+        <a class="plan__change" href="#">Change</a>
       </div>
-      <a class="change" href="#">Change</a>
     </div>
-       
+    
+    <div class="btn__container">
     <button class="btn__proceed">Proceed to Payment</button>
     <button class="btn__cancel">Cancel Order</button>
-  
+    </div>
+
+  </article>
   </main>
 
   <footer>
