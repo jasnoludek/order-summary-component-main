@@ -97,10 +97,9 @@ h1,
     color: var(--n__dark-blue);
 }
 
-p,
-.plan__price {
+p {
     color: var(--n__desaturated-blue);
-    var(--font-weight__medium);
+    font-weight: var(--font-weight__medium);
 }
 
 .plan__change,
@@ -171,6 +170,10 @@ p {
     font-weight: var(--font-weight__black);
 }
 
+.plan__price {
+    margin: 0;
+}
+
 .plan__change {
     display: flex;
     align-items: center;
@@ -227,7 +230,7 @@ footer {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
     body {
         background-image: url("images/pattern-background-desktop.svg");
         background-repeat: no-repeat;
