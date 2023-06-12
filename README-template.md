@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Screenshot
 
-![screenshot mobile](.images/order-summary-screenshot-mobile.jpg)
-![screenshot desktop](.images/order-summary-screenshot-desktop.jpg)
+![screenshot mobile](images/order-summary-mobile-screenshot.png)
+![screenshot desktop](images/order-summary-desktop-screenshot.png)
 
 ### Links
 
