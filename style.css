@@ -220,6 +220,7 @@ p {
 footer {
     position: sticky;
     top: 100%;
+    margin-bottom: 1rem;
 }
 
 
