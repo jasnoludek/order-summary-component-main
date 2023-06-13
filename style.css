@@ -126,8 +126,9 @@ body {
     overflow: hidden; 
     text-align: center;
     max-width: 21rem;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
     box-shadow: 0rem 1rem 1rem hsla(245, 75%, 52%, 0.1);
+
 }
 
 .card__img {
@@ -136,15 +137,21 @@ body {
     margin: 0;
 }
 
+.card__content {
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
 h1 {
-    margin: 1.5rem 0;
     font-size: 1.5rem;
     font-weight: var(--font-weight__black)
 }
 
 p {
-    margin: 0 2.25rem;
     line-height: 1.5;
+    padding: 0 0.5rem;
 }
 
 .card__plan-container {
@@ -152,26 +159,32 @@ p {
     display: flex;
     align-content: center;
     padding: 1rem;
-    margin: 1.5rem 1.5rem;
+    margin-bottom: 1rem;
     border-radius: 0.875rem;
     font-size: 0.875rem;
+}
+
+.card__icon-music {
+    align-self: center;
 }
 
 .card__plan-selection {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     margin-left: 1.25rem;
+    text-align: left;
+    gap: 0.75ch;
 }
 
 .plan__type {
     font-size: 1rem;
     font-weight: var(--font-weight__black);
+    line-height: 1.1;
 }
 
 .plan__price {
-    margin: 0;
+    padding: 0;
 }
 
 .plan__change {
@@ -186,37 +199,33 @@ p {
     text-decoration: none;
 }
 
-.btn__container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 1.5rem;
-    font-size: 1rem;
-}
-
-.btn__proceed {
+.anchor__proceed {
+    display: block;
+    text-decoration: none;
     background-color: var(--p__bright-blue);
     color: white;
     font-weight: var(--font-weight__black);
     padding: 0.75rem 0;
     border: none;
     border-radius: 0.75rem;
-    margin-bottom: 1.5rem;
     box-shadow: 0rem 1rem 1rem hsla(245, 75%, 52%, 0.25);
 }
 
-.btn__proceed:hover {
+.anchor__proceed:hover {
     background-color: hsl(245, 75%, 67%);
 }
 
-.btn__cancel {
+.anchor__cancel {
+    display: block;
+    text-decoration: none;
+    padding: 0.75rem 0;
     background: none;
     border: none;
     color: var(--n__desaturated-blue);
     font-weight: var(--font-weight__black);
-    margin-bottom: 1.5rem;
 }
 
-.btn__cancel:hover {
+.anchor__cancel:hover {
     color: hsl(224, 23%, 35%);
 }
 
@@ -225,7 +234,6 @@ footer {
     top: 100%;
     margin-bottom: 1rem;
 }
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
@@ -241,20 +249,8 @@ footer {
         max-width: 26rem;
     }
 
-    h1 {
-        margin-top: 2rem;
-    }
-
-    p {
-        margin: 0 3rem;
-    }
-
-    .card__plan-container {
-        margin: 1.5rem 2.25rem;
-    }
-
-    .btn__container {
-        margin: 1.75rem 2.25rem;
+    .card__content {
+        padding: 2rem 3rem;
     }
 }
 
